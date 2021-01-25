@@ -1,0 +1,17 @@
+[
+  {
+    "featureType": "administrative.province",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#000000"
+      },
+      {
+        "visibility": "off"
+      },
+      {
+        "weight": 1.5
+      }
+    ]
+  }
+]

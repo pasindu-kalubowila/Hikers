@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="85dp"
+    android:background="@drawable/story_back"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/story_photo"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@color/colorWhite"
+        app:civ_border_color="@color/deeppurple"
+        app:civ_border_width="3dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/story_photo_seen"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:src="@color/white"
+        android:visibility="gone"
+        app:civ_border_color="@color/colorGray"
+        app:civ_border_width="4dp" />
+
+    <TextView
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_story"
+        android:maxLength="8"
+        android:maxLines="1"
+        android:fontFamily="@font/lucida_calligraphy_italic"
+        android:layout_gravity="center"
+        tools:ignore="SmallSp" />
+</LinearLayout>

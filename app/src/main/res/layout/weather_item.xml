@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txtDateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="2"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorDark"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/imgWeatherStatus"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/content_desc"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/txtTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/_10"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+</LinearLayout>

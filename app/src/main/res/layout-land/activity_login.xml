@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:background="@color/colorWhite"
+    tools:context=".activities.LoginActivity">
+
+
+    <ImageView
+        android:layout_width="131dp"
+        android:layout_height="108dp"
+        android:src="@drawable/finallogo" />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="474dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_email"
+        android:hint="@string/Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        android:drawableLeft="@drawable/ic_password"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="465dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="cursive"
+        android:text="@string/Login"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txt_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:editable="false"
+        android:focusable="auto"
+        android:focusableInTouchMode="false"
+        android:hint="@string/Login_txt"
+        android:inputType="none" />
+
+
+</LinearLayout>

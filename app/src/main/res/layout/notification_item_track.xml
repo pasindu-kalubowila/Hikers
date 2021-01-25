@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile_track"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/image_profile_track"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/username_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/username_profile"
+            android:textColor="@color/colorDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fullname_track"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/full_name_profile" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_yes_track"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_background"
+            android:paddingStart="1dp"
+            android:text="@string/accept"
+            android:textColor="@color/colorPrimary"
+            android:textSize="10sp"
+            tools:ignore="RtlSymmetry,SmallSp" />
+
+        <EditText
+            android:layout_width="5dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_no_track"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_background"
+            android:text="@string/remove"
+            android:textColor="@color/colorRed"
+            android:textSize="10sp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_toEndOf="@+id/image_profile_track"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:padding="25dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
